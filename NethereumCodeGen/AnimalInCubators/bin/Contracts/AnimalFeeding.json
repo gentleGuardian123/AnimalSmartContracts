@@ -1,0 +1,1538 @@
+{
+    "contractName": "AnimalFeeding",
+    "abi": [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_animalId",
+                    "type": "uint256"
+                },
+                {
+                    "name": "_targetDna",
+                    "type": "uint256"
+                }
+            ],
+            "name": "feedAndGrow",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_animalId",
+                    "type": "uint256"
+                },
+                {
+                    "name": "_foodName",
+                    "type": "string"
+                }
+            ],
+            "name": "feedOnFood",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "animals",
+            "outputs": [
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "dna",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_name",
+                    "type": "string"
+                }
+            ],
+            "name": "createRandomAnimal",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "_index",
+                    "type": "uint256"
+                }
+            ],
+            "name": "showAnimalByIndex",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "animalToOwner",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "animalId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "name": "dna",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewAnimal",
+            "type": "event"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_animalId\",\"type\":\"uint256\"},{\"name\":\"_targetDna\",\"type\":\"uint256\"}],\"name\":\"feedAndGrow\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_animalId\",\"type\":\"uint256\"},{\"name\":\"_foodName\",\"type\":\"string\"}],\"name\":\"feedOnFood\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"animals\",\"outputs\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"dna\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"createRandomAnimal\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"showAnimalByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"},{\"name\":\"\",\"type\":\"uint256\"},{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"animalToOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"animalId\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"name\":\"dna\",\"type\":\"uint256\"}],\"name\":\"NewAnimal\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/Contracts/AnimalFeeding.sol\":\"AnimalFeeding\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/Contracts/AnimalFeeding.sol\":{\"keccak256\":\"0x35d3e7a21c8e5c82e528592619822a9250bf5c2cc1906a00dc28d09842d22400\",\"urls\":[\"bzzr://95384027a966ddaef9c0019625e6c33dce246c6d23cbb5289debe8c2d2c902cb\"]},\"/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/Contracts/AnimalIncubators_prc2.sol\":{\"keccak256\":\"0xe235fe567fa10cc7af3fbaeaeb69639af1a802a0db3115b945ac386076bf7920\",\"urls\":[\"bzzr://9189e9503b3808ea6e6c3aefa9903e266e0b74899aad227b8ec030a55f5cdf62\"]}},\"version\":1}",
+    "bytecode": "60806040526010600055662386f26fc1000060015534801561002057600080fd5b506109c8806100306000396000f3006080604052600436106100775763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630ed6722d811461007c5780632f1303a314610099578063998dd3ca146100f75780639abfb23e1461018e578063a767d7af146101e7578063d81c513a146102b1575b600080fd5b34801561008857600080fd5b506100976004356024356102f2565b005b3480156100a557600080fd5b5060408051602060046024803582810135601f81018590048502860185019096528585526100979583359536956044949193909101919081908401838280828437509497506103b79650505050505050565b34801561010357600080fd5b5061010f6004356103d3565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561015257818101518382015260200161013a565b50505050905090810190601f16801561017f5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561019a57600080fd5b506040805160206004803580820135601f81018490048402850184019095528484526100979436949293602493928401919081908401838280828437509497506104879650505050505050565b3480156101f357600080fd5b506101ff6004356104ba565b60405180806020018481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828103825285818151815260200191508051906020019080838360005b8381101561027457818101518382015260200161025c565b50505050905090810190601f1680156102a15780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b3480156102bd57600080fd5b506102c96004356105c1565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b600082815260036020526040812054819073ffffffffffffffffffffffffffffffffffffffff16331461032457600080fd5b600280548590811061033257fe5b906000526020600020906002020191506001548381151561034f57fe5b06925060028383600101540181151561036457fe5b04905060648106810360630190506103b16040805190810160405280600681526020017f4e6f2d6f6e650000000000000000000000000000000000000000000000000000815250826105e9565b50505050565b60006103c282610754565b90506103ce83826102f2565b505050565b60028054829081106103e157fe5b60009182526020918290206002918202018054604080516001831615610100026000190190921693909304601f8101859004850282018501909352828152909350918391908301828280156104775780601f1061044c57610100808354040283529160200191610477565b820191906000526020600020905b81548152906001019060200180831161045a57829003601f168201915b5050505050908060010154905082565b33600090815260046020526040812054156104a157600080fd5b6104aa82610820565b90506104b682826105e9565b5050565b60606000806002848154811015156104ce57fe5b90600052602060002090600202016000016002858154811015156104ee57fe5b600091825260208083206002928302016001908101548985526003835260409485902054865486516101009482161594909402600019011694909404601f81018490048402830184019095528482529373ffffffffffffffffffffffffffffffffffffffff9093169290918591908301828280156105ad5780601f10610582576101008083540402835291602001916105ad565b820191906000526020600020905b81548152906001019060200180831161059057829003601f168201915b505050505092509250925092509193909250565b60036020526000908152604090205473ffffffffffffffffffffffffffffffffffffffff1681565b60408051808201909152828152602080820183905260028054600181810180845560008481528651805191979396929593949093027f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace019261064f928492910190610901565b50602091820151600191820155929091036000818152600383526040808220805473ffffffffffffffffffffffffffffffffffffffff19163390811790915582526004845280822080549095019094558351828152938401869052606084840181815288519186019190915287519295507f07be46eb2dba0b4dd932cd8c8cf7a4471478b8e52413bb8e9e88580596866431948694899489949293926080850192870191908190849084905b838110156107135781810151838201526020016106fb565b50505050905090810190601f1680156107405780820380516001836020036101000a031916815260200191505b5094505050505060405180910390a1505050565b600080826040516020018082805190602001908083835b6020831061078a5780518252601f19909201916020918201910161076b565b6001836020036101000a0380198251168184511680821785525050505050509050019150506040516020818303038152906040526040518082805190602001908083835b602083106107ed5780518252601f1990920191602091820191016107ce565b5181516020939093036101000a600019018019909116921691909117905260405192018290039091209695505050505050565b600080826040516020018082805190602001908083835b602083106108565780518252601f199092019160209182019101610837565b6001836020036101000a0380198251168184511680821785525050505050509050019150506040516020818303038152906040526040518082805190602001908083835b602083106108b95780518252601f19909201916020918201910161089a565b6001836020036101000a0380198251168184511680821785525050505050509050019150506040518091039020600190049050600154818115156108f957fe5b069392505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061094257805160ff191683800117855561096f565b8280016001018555821561096f579182015b8281111561096f578251825591602001919060010190610954565b5061097b92915061097f565b5090565b61099991905b8082111561097b5760008155600101610985565b905600a165627a7a72305820ed141e4be4348c82b1a0f31514d247d2e92753b850c08f03558f3aa4509f74c60029",
+    "deployedBytecode": "6080604052600436106100775763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630ed6722d811461007c5780632f1303a314610099578063998dd3ca146100f75780639abfb23e1461018e578063a767d7af146101e7578063d81c513a146102b1575b600080fd5b34801561008857600080fd5b506100976004356024356102f2565b005b3480156100a557600080fd5b5060408051602060046024803582810135601f81018590048502860185019096528585526100979583359536956044949193909101919081908401838280828437509497506103b79650505050505050565b34801561010357600080fd5b5061010f6004356103d3565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561015257818101518382015260200161013a565b50505050905090810190601f16801561017f5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561019a57600080fd5b506040805160206004803580820135601f81018490048402850184019095528484526100979436949293602493928401919081908401838280828437509497506104879650505050505050565b3480156101f357600080fd5b506101ff6004356104ba565b60405180806020018481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828103825285818151815260200191508051906020019080838360005b8381101561027457818101518382015260200161025c565b50505050905090810190601f1680156102a15780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b3480156102bd57600080fd5b506102c96004356105c1565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b600082815260036020526040812054819073ffffffffffffffffffffffffffffffffffffffff16331461032457600080fd5b600280548590811061033257fe5b906000526020600020906002020191506001548381151561034f57fe5b06925060028383600101540181151561036457fe5b04905060648106810360630190506103b16040805190810160405280600681526020017f4e6f2d6f6e650000000000000000000000000000000000000000000000000000815250826105e9565b50505050565b60006103c282610754565b90506103ce83826102f2565b505050565b60028054829081106103e157fe5b60009182526020918290206002918202018054604080516001831615610100026000190190921693909304601f8101859004850282018501909352828152909350918391908301828280156104775780601f1061044c57610100808354040283529160200191610477565b820191906000526020600020905b81548152906001019060200180831161045a57829003601f168201915b5050505050908060010154905082565b33600090815260046020526040812054156104a157600080fd5b6104aa82610820565b90506104b682826105e9565b5050565b60606000806002848154811015156104ce57fe5b90600052602060002090600202016000016002858154811015156104ee57fe5b600091825260208083206002928302016001908101548985526003835260409485902054865486516101009482161594909402600019011694909404601f81018490048402830184019095528482529373ffffffffffffffffffffffffffffffffffffffff9093169290918591908301828280156105ad5780601f10610582576101008083540402835291602001916105ad565b820191906000526020600020905b81548152906001019060200180831161059057829003601f168201915b505050505092509250925092509193909250565b60036020526000908152604090205473ffffffffffffffffffffffffffffffffffffffff1681565b60408051808201909152828152602080820183905260028054600181810180845560008481528651805191979396929593949093027f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace019261064f928492910190610901565b50602091820151600191820155929091036000818152600383526040808220805473ffffffffffffffffffffffffffffffffffffffff19163390811790915582526004845280822080549095019094558351828152938401869052606084840181815288519186019190915287519295507f07be46eb2dba0b4dd932cd8c8cf7a4471478b8e52413bb8e9e88580596866431948694899489949293926080850192870191908190849084905b838110156107135781810151838201526020016106fb565b50505050905090810190601f1680156107405780820380516001836020036101000a031916815260200191505b5094505050505060405180910390a1505050565b600080826040516020018082805190602001908083835b6020831061078a5780518252601f19909201916020918201910161076b565b6001836020036101000a0380198251168184511680821785525050505050509050019150506040516020818303038152906040526040518082805190602001908083835b602083106107ed5780518252601f1990920191602091820191016107ce565b5181516020939093036101000a600019018019909116921691909117905260405192018290039091209695505050505050565b600080826040516020018082805190602001908083835b602083106108565780518252601f199092019160209182019101610837565b6001836020036101000a0380198251168184511680821785525050505050509050019150506040516020818303038152906040526040518082805190602001908083835b602083106108b95780518252601f19909201916020918201910161089a565b6001836020036101000a0380198251168184511680821785525050505050509050019150506040518091039020600190049050600154818115156108f957fe5b069392505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061094257805160ff191683800117855561096f565b8280016001018555821561096f579182015b8281111561096f578251825591602001919060010190610954565b5061097b92915061097f565b5090565b61099991905b8082111561097b5760008155600101610985565b905600a165627a7a72305820ed141e4be4348c82b1a0f31514d247d2e92753b850c08f03558f3aa4509f74c60029",
+    "sourceMap": "64:763:0:-;;;80:2:1;63:19;;105:15;88:32;;64:763:0;5:2:-1;;;;30:1;27;20:12;5:2;64:763:0;;;;;;;",
+    "deployedSourceMap": "64:763:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;118:365;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;118:365:0;;;;;;;;;664:155;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;664:155:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;664:155:0;;-1:-1:-1;664:155:0;;-1:-1:-1;;;;;;;664:155:0;266:23:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;266:23:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;266:23:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;837:197;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;837:197:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;837:197:1;;-1:-1:-1;837:197:1;;-1:-1:-1;;;;;;;837:197:1;1041:173;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;1041:173:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;1041:173:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;300:46;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;300:46:1;;;;;;;;;;;;;;;;;;;;;;;;118:365:0;246:23;211:24;;;:13;:24;;;;;;246:23;;211:24;;197:10;:38;189:47;;;;;;272:7;:18;;280:9;;272:18;;;;;;;;;;;;;;;;246:44;;326:9;;313:10;:22;;;;;;;;300:35;;389:1;375:10;360:8;:12;;;:25;359:31;;;;;;;;;-1:-1:-1;427:3:0;359:31;418:12;409:6;:21;433:2;409:26;400:35;;445:31;;;;;;;;;;;;;;;;;;;469:6;445:13;:31::i;:::-;118:365;;;;:::o;664:155::-;735:12;750:21;761:9;750:10;:21::i;:::-;735:36;;781:31;793:9;804:7;781:11;:31::i;:::-;664:155;;;:::o;266:23:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;266:23:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;266:23:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;837:197::-;921:10;948:12;904:28;;;:16;:28;;;;;;:33;896:42;;;;;;963:25;982:5;963:18;:25::i;:::-;948:40;;998:29;1012:5;1019:7;998:13;:29::i;:::-;837:197;;:::o;1041:173::-;1102:6;1110:4;1116:7;1142;1150:6;1142:15;;;;;;;;;;;;;;;;;;;;:20;;1164:7;1172:6;1164:15;;;;;;;;;;;;;;;;;;;;;;;:19;;;;;1185:21;;;:13;:21;;;;;;;;1134:73;;;;1185:21;1134:73;;;;;;;;-1:-1:-1;;1134:73:1;;;;;;;;;;;;;;;;;;;;;;;;1164:19;1185:21;;;;;1134:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1041:173;;;;;:::o;300:46::-;;;;;;;;;;;;;;;:::o;405:242::-;495:19;;;;;;;;;;;;;;;;;;;482:7;27:10:-1;;518:1:1;23:18:-1;;;45:23;;;472:7:1;482:33;;;;;;;472:7;;518:1;;23:18:-1;;495:19:1;;482:33;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;482:33:1;;;;;;;;;;:37;;;;529:17;;;;:13;:17;;;;;;:30;;-1:-1:-1;;529:30:1;549:10;529:30;;;;;;569:28;;:16;:28;;;;;:30;;;;;;;;614:26;;;;;;;;;;;;;;;;;;;;;;;;;;;;;482:37;;-1:-1:-1;614:26:1;;482:37;;628:5;;635:4;;614:26;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;614:26:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;405:242;;;:::o;493:161:0:-;554:4;570:9;614;597:27;;;;;;;;;;;;;;;36:153:-1;66:2;58:11;;36:153;;176:10;;164:23;;-1:-1;;139:12;;;;98:2;89:12;;;;114;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;597:27:0;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;597:27:0;;;587:38;;;;;;;;;;;;;36:153:-1;66:2;58:11;;36:153;;176:10;;164:23;;-1:-1;;139:12;;;;98:2;89:12;;;;114;36:153;;;299:10;344;;263:2;259:12;;;;254:3;250:22;-1:-1;;246:30;311:9;;295:26;;;340:21;;377:20;;;;365:33;;587:38:0;;;;;;;;;;;493:161;-1:-1:-1;;;;;;493:161:0:o;657:170:1:-;720:4;736:9;780:4;763:22;;;;;;;;;;;;;;;36:153:-1;66:2;58:11;;36:153;;176:10;;164:23;;-1:-1;;139:12;;;;98:2;89:12;;;;114;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;763:22:1;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;763:22:1;;;753:33;;;;;;;;;;;;;36:153:-1;66:2;58:11;;36:153;;176:10;;164:23;;-1:-1;;139:12;;;;98:2;89:12;;;;114;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;753:33:1;;;;;;;;;;;;;;;;748:39;;;736:51;;811:9;;804:4;:16;;;;;;;;;657:170;-1:-1:-1;;;657:170:1:o;64:763:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;64:763:0;;;-1:-1:-1;64:763:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+    "sourcePath": "/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/Contracts/AnimalFeeding.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.4.26+commit.4563c3fc"
+    },
+    "ast": {
+        "absolutePath": "/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/Contracts/AnimalFeeding.sol",
+        "exportedSymbols": {
+            "AnimalFeeding": [
+                99
+            ]
+        },
+        "id": 100,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.4",
+                    ".26"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:24:0"
+            },
+            {
+                "absolutePath": "/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/Contracts/AnimalIncubators_prc2.sol",
+                "file": "./AnimalIncubators_prc2.sol",
+                "id": 2,
+                "nodeType": "ImportDirective",
+                "scope": 100,
+                "sourceUnit": 248,
+                "src": "25:37:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "baseContracts": [
+                    {
+                        "arguments": null,
+                        "baseName": {
+                            "contractScope": null,
+                            "id": 3,
+                            "name": "AnimalIncubators_prc2",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 247,
+                            "src": "90:21:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_AnimalIncubators_prc2_$247",
+                                "typeString": "contract AnimalIncubators_prc2"
+                            }
+                        },
+                        "id": 4,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "90:21:0"
+                    }
+                ],
+                "contractDependencies": [
+                    247
+                ],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 99,
+                "linearizedBaseContracts": [
+                    99,
+                    247
+                ],
+                "name": "AnimalFeeding",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 57,
+                            "nodeType": "Block",
+                            "src": "179:304:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "commonType": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                },
+                                                "id": 17,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 12,
+                                                        "name": "msg",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 262,
+                                                        "src": "197:3:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_message",
+                                                            "typeString": "msg"
+                                                        }
+                                                    },
+                                                    "id": 13,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "sender",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": null,
+                                                    "src": "197:10:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": "==",
+                                                "rightExpression": {
+                                                    "argumentTypes": null,
+                                                    "baseExpression": {
+                                                        "argumentTypes": null,
+                                                        "id": 14,
+                                                        "name": "animalToOwner",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 129,
+                                                        "src": "211:13:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
+                                                            "typeString": "mapping(uint256 => address)"
+                                                        }
+                                                    },
+                                                    "id": 16,
+                                                    "indexExpression": {
+                                                        "argumentTypes": null,
+                                                        "id": 15,
+                                                        "name": "_animalId",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 6,
+                                                        "src": "225:9:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "nodeType": "IndexAccess",
+                                                    "src": "211:24:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "src": "197:38:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            ],
+                                            "id": 11,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                265,
+                                                266
+                                            ],
+                                            "referencedDeclaration": 265,
+                                            "src": "189:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                                                "typeString": "function (bool) pure"
+                                            }
+                                        },
+                                        "id": 18,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "189:47:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 19,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "189:47:0"
+                                },
+                                {
+                                    "assignments": [
+                                        21
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 21,
+                                            "name": "myAnimal",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 58,
+                                            "src": "246:23:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "storage",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Animal_$122_storage_ptr",
+                                                "typeString": "struct AnimalIncubators_prc2.Animal"
+                                            },
+                                            "typeName": {
+                                                "contractScope": null,
+                                                "id": 20,
+                                                "name": "Animal",
+                                                "nodeType": "UserDefinedTypeName",
+                                                "referencedDeclaration": 122,
+                                                "src": "246:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Animal_$122_storage_ptr",
+                                                    "typeString": "struct AnimalIncubators_prc2.Animal"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 25,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "baseExpression": {
+                                            "argumentTypes": null,
+                                            "id": 22,
+                                            "name": "animals",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 125,
+                                            "src": "272:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_array$_t_struct$_Animal_$122_storage_$dyn_storage",
+                                                "typeString": "struct AnimalIncubators_prc2.Animal storage ref[] storage ref"
+                                            }
+                                        },
+                                        "id": 24,
+                                        "indexExpression": {
+                                            "argumentTypes": null,
+                                            "id": 23,
+                                            "name": "_animalId",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 6,
+                                            "src": "280:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "IndexAccess",
+                                        "src": "272:18:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Animal_$122_storage",
+                                            "typeString": "struct AnimalIncubators_prc2.Animal storage ref"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "246:44:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 30,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 26,
+                                            "name": "_targetDna",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 8,
+                                            "src": "300:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "commonType": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "id": 29,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftExpression": {
+                                                "argumentTypes": null,
+                                                "id": 27,
+                                                "name": "_targetDna",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 8,
+                                                "src": "313:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "nodeType": "BinaryOperation",
+                                            "operator": "%",
+                                            "rightExpression": {
+                                                "argumentTypes": null,
+                                                "id": 28,
+                                                "name": "dnaLength",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 109,
+                                                "src": "326:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "src": "313:22:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "300:35:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 31,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "300:35:0"
+                                },
+                                {
+                                    "assignments": [
+                                        33
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 33,
+                                            "name": "newDna",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 58,
+                                            "src": "345:11:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 32,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "345:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 41,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 40,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "argumentTypes": null,
+                                            "components": [
+                                                {
+                                                    "argumentTypes": null,
+                                                    "commonType": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    "id": 37,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftExpression": {
+                                                        "argumentTypes": null,
+                                                        "expression": {
+                                                            "argumentTypes": null,
+                                                            "id": 34,
+                                                            "name": "myAnimal",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 21,
+                                                            "src": "360:8:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_struct$_Animal_$122_storage_ptr",
+                                                                "typeString": "struct AnimalIncubators_prc2.Animal storage pointer"
+                                                            }
+                                                        },
+                                                        "id": 35,
+                                                        "isConstant": false,
+                                                        "isLValue": true,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberName": "dna",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": 121,
+                                                        "src": "360:12:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "nodeType": "BinaryOperation",
+                                                    "operator": "+",
+                                                    "rightExpression": {
+                                                        "argumentTypes": null,
+                                                        "id": 36,
+                                                        "name": "_targetDna",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 8,
+                                                        "src": "375:10:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "src": "360:25:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                }
+                                            ],
+                                            "id": 38,
+                                            "isConstant": false,
+                                            "isInlineArray": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "nodeType": "TupleExpression",
+                                            "src": "359:27:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "/",
+                                        "rightExpression": {
+                                            "argumentTypes": null,
+                                            "hexValue": "32",
+                                            "id": 39,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "389:1:0",
+                                            "subdenomination": null,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_2_by_1",
+                                                "typeString": "int_const 2"
+                                            },
+                                            "value": "2"
+                                        },
+                                        "src": "359:31:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "345:45:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 50,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 42,
+                                            "name": "newDna",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 33,
+                                            "src": "400:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "commonType": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "id": 49,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftExpression": {
+                                                "argumentTypes": null,
+                                                "commonType": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                },
+                                                "id": 47,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 43,
+                                                    "name": "newDna",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 33,
+                                                    "src": "409:6:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": "-",
+                                                "rightExpression": {
+                                                    "argumentTypes": null,
+                                                    "commonType": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    "id": 46,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftExpression": {
+                                                        "argumentTypes": null,
+                                                        "id": 44,
+                                                        "name": "newDna",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 33,
+                                                        "src": "418:6:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "nodeType": "BinaryOperation",
+                                                    "operator": "%",
+                                                    "rightExpression": {
+                                                        "argumentTypes": null,
+                                                        "hexValue": "313030",
+                                                        "id": 45,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "number",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "427:3:0",
+                                                        "subdenomination": null,
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_rational_100_by_1",
+                                                            "typeString": "int_const 100"
+                                                        },
+                                                        "value": "100"
+                                                    },
+                                                    "src": "418:12:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "src": "409:21:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "nodeType": "BinaryOperation",
+                                            "operator": "+",
+                                            "rightExpression": {
+                                                "argumentTypes": null,
+                                                "hexValue": "3939",
+                                                "id": 48,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "433:2:0",
+                                                "subdenomination": null,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_99_by_1",
+                                                    "typeString": "int_const 99"
+                                                },
+                                                "value": "99"
+                                            },
+                                            "src": "409:26:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "400:35:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 51,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "400:35:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "hexValue": "4e6f2d6f6e65",
+                                                "id": 53,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "459:8:0",
+                                                "subdenomination": null,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_a43f091dec89ec9038a66a461ffda9acc968ea534161015c1b75cbc311926939",
+                                                    "typeString": "literal_string \"No-one\""
+                                                },
+                                                "value": "No-one"
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 54,
+                                                "name": "newDna",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 33,
+                                                "src": "469:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_a43f091dec89ec9038a66a461ffda9acc968ea534161015c1b75cbc311926939",
+                                                    "typeString": "literal_string \"No-one\""
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            ],
+                                            "id": 52,
+                                            "name": "_createAnimal",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 172,
+                                            "src": "445:13:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                                                "typeString": "function (string memory,uint256)"
+                                            }
+                                        },
+                                        "id": 55,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "445:31:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 56,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "445:31:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 58,
+                        "implemented": true,
+                        "isConstructor": false,
+                        "isDeclaredConst": false,
+                        "modifiers": [],
+                        "name": "feedAndGrow",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 9,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 6,
+                                    "name": "_animalId",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 58,
+                                    "src": "139:14:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 5,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "139:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 8,
+                                    "name": "_targetDna",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 58,
+                                    "src": "155:15:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 7,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "155:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "138:33:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 10,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "179:0:0"
+                        },
+                        "scope": 99,
+                        "src": "118:365:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 78,
+                            "nodeType": "Block",
+                            "src": "560:94:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        66
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 66,
+                                            "name": "rand",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 79,
+                                            "src": "570:9:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 65,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "570:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 75,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "arguments": [
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "arguments": [
+                                                            {
+                                                                "argumentTypes": null,
+                                                                "id": 71,
+                                                                "name": "_FoodName",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 60,
+                                                                "src": "614:9:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                                    "typeString": "string memory"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "expression": {
+                                                            "argumentTypes": [
+                                                                {
+                                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                                    "typeString": "string memory"
+                                                                }
+                                                            ],
+                                                            "expression": {
+                                                                "argumentTypes": null,
+                                                                "id": 69,
+                                                                "name": "abi",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 249,
+                                                                "src": "597:3:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_magic_abi",
+                                                                    "typeString": "abi"
+                                                                }
+                                                            },
+                                                            "id": 70,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": true,
+                                                            "lValueRequested": false,
+                                                            "memberName": "encodePacked",
+                                                            "nodeType": "MemberAccess",
+                                                            "referencedDeclaration": null,
+                                                            "src": "597:16:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                                                "typeString": "function () pure returns (bytes memory)"
+                                                            }
+                                                        },
+                                                        "id": 72,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "kind": "functionCall",
+                                                        "lValueRequested": false,
+                                                        "names": [],
+                                                        "nodeType": "FunctionCall",
+                                                        "src": "597:27:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_bytes_memory_ptr",
+                                                            "typeString": "bytes memory"
+                                                        }
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_bytes_memory_ptr",
+                                                            "typeString": "bytes memory"
+                                                        }
+                                                    ],
+                                                    "id": 68,
+                                                    "name": "keccak256",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 256,
+                                                    "src": "587:9:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
+                                                        "typeString": "function () pure returns (bytes32)"
+                                                    }
+                                                },
+                                                "id": 73,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "587:38:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                }
+                                            ],
+                                            "id": 67,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "lValueRequested": false,
+                                            "nodeType": "ElementaryTypeNameExpression",
+                                            "src": "582:4:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_type$_t_uint256_$",
+                                                "typeString": "type(uint256)"
+                                            },
+                                            "typeName": "uint"
+                                        },
+                                        "id": 74,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "typeConversion",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "582:44:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "570:56:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 76,
+                                        "name": "rand",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 66,
+                                        "src": "643:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 64,
+                                    "id": 77,
+                                    "nodeType": "Return",
+                                    "src": "636:11:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 79,
+                        "implemented": true,
+                        "isConstructor": false,
+                        "isDeclaredConst": true,
+                        "modifiers": [],
+                        "name": "_catchFood",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 61,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 60,
+                                    "name": "_FoodName",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 79,
+                                    "src": "513:16:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 59,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "513:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "512:18:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 64,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 63,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 79,
+                                    "src": "554:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 62,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "554:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "553:6:0"
+                        },
+                        "scope": 99,
+                        "src": "493:161:0",
+                        "stateMutability": "pure",
+                        "superFunction": null,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 97,
+                            "nodeType": "Block",
+                            "src": "725:94:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        87
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 87,
+                                            "name": "foodDna",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 98,
+                                            "src": "735:12:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 86,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "735:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 91,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 89,
+                                                "name": "_foodName",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 83,
+                                                "src": "761:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            ],
+                                            "id": 88,
+                                            "name": "_catchFood",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 79,
+                                            "src": "750:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_uint256_$",
+                                                "typeString": "function (string memory) pure returns (uint256)"
+                                            }
+                                        },
+                                        "id": 90,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "750:21:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "735:36:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 93,
+                                                "name": "_animalId",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 81,
+                                                "src": "793:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 94,
+                                                "name": "foodDna",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 87,
+                                                "src": "804:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            ],
+                                            "id": 92,
+                                            "name": "feedAndGrow",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 58,
+                                            "src": "781:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
+                                                "typeString": "function (uint256,uint256)"
+                                            }
+                                        },
+                                        "id": 95,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "781:31:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 96,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "781:31:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 98,
+                        "implemented": true,
+                        "isConstructor": false,
+                        "isDeclaredConst": false,
+                        "modifiers": [],
+                        "name": "feedOnFood",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 84,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 81,
+                                    "name": "_animalId",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 98,
+                                    "src": "684:14:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 80,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "684:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 83,
+                                    "name": "_foodName",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 98,
+                                    "src": "700:16:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 82,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "700:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "683:34:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 85,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "725:0:0"
+                        },
+                        "scope": 99,
+                        "src": "664:155:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 100,
+                "src": "64:763:0"
+            }
+        ],
+        "src": "0:828:0"
+    },
+    "functionHashes": {
+        "animalToOwner(uint256)": "d81c513a",
+        "animals(uint256)": "998dd3ca",
+        "createRandomAnimal(string)": "9abfb23e",
+        "feedAndGrow(uint256,uint256)": "0ed6722d",
+        "feedOnFood(uint256,string)": "2f1303a3",
+        "showAnimalByIndex(uint256)": "a767d7af"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "500800",
+            "executionCost": "40549",
+            "totalCost": "541349"
+        },
+        "external": {
+            "animalToOwner(uint256)": "581",
+            "animals(uint256)": "infinite",
+            "createRandomAnimal(string)": "infinite",
+            "feedAndGrow(uint256,uint256)": "infinite",
+            "feedOnFood(uint256,string)": "infinite",
+            "showAnimalByIndex(uint256)": "infinite"
+        },
+        "internal": {
+            "_catchFood(string memory)": "infinite"
+        }
+    }
+}

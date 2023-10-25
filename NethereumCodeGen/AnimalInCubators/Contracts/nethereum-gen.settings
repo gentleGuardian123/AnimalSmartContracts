@@ -1,0 +1,7 @@
+{
+    "projectName": "AnimalInCubators",
+    "namespace": "AnimalInCubators.Contracts",
+    "lang": 0,
+    "autoCodeGen": true,
+    "projectPath": "../"
+}

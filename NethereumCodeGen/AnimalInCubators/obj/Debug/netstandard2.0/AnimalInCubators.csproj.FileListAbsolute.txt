@@ -1,0 +1,10 @@
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/bin/Debug/netstandard2.0/AnimalInCubators.deps.json
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/bin/Debug/netstandard2.0/AnimalInCubators.dll
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/bin/Debug/netstandard2.0/AnimalInCubators.pdb
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/obj/Debug/netstandard2.0/AnimalInCubators.csproj.AssemblyReference.cache
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/obj/Debug/netstandard2.0/AnimalInCubators.GeneratedMSBuildEditorConfig.editorconfig
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/obj/Debug/netstandard2.0/AnimalInCubators.AssemblyInfoInputs.cache
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/obj/Debug/netstandard2.0/AnimalInCubators.AssemblyInfo.cs
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/obj/Debug/netstandard2.0/AnimalInCubators.csproj.CoreCompileInputs.cache
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/obj/Debug/netstandard2.0/AnimalInCubators.dll
+/home/went/learn/solidity/NethereumCodeGen/AnimalInCubators/obj/Debug/netstandard2.0/AnimalInCubators.pdb

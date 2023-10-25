@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalInCubatorsConsole", "AnimalInCubatorsConsole\AnimalInCubatorsConsole.csproj", "{76989D98-9FD7-4353-A406-ABDB8FC37C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalInCubators", "AnimalInCubators\AnimalInCubators.csproj", "{15505755-A55C-4D98-A525-C2FE80DDDAFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76989D98-9FD7-4353-A406-ABDB8FC37C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76989D98-9FD7-4353-A406-ABDB8FC37C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76989D98-9FD7-4353-A406-ABDB8FC37C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76989D98-9FD7-4353-A406-ABDB8FC37C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15505755-A55C-4D98-A525-C2FE80DDDAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15505755-A55C-4D98-A525-C2FE80DDDAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15505755-A55C-4D98-A525-C2FE80DDDAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15505755-A55C-4D98-A525-C2FE80DDDAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
